@@ -120,6 +120,9 @@ function svninfoserver()
 ## GIT aliases and functions
 alias gti=git
 alias gs="git status"
+alias gpr="git pull --rebase"
+alias gitka="gitk --all"
+alias backup="!git stash save -u 'Backup' && git stash apply"
 
 ## TAN stuff (only works in root dir of TAN)
 
@@ -161,6 +164,9 @@ alias miffs="java -cp \"c:\\Documents and Settings\\RTB\\My Documents\\personal\
 alias cmiffs="stty -icanon min 1 -echo; xtitle miffs; java -cp \"c:\\Documents and Settings\\RTB\\My Documents\\personal\\MIFFS.jar;c:\\Documents and Settings\\RTB\\My Documents\\personal\\jline-0.9.94.jar\" -Djline.terminal=jline.UnixTerminal jline.ConsoleRunner rich.miffs.frontends.CmdLineFront; stty icanon echo"
 
 alias lynx='xtitle lynx; lynx'
+
+alias sandbox="ssh root@pal.sandbox.dev.bbc.co.uk"
+alias proxy="ssh -D 8000 sjw@sjwtest.zoo.lan"
 
 # windows shell launcher (knows windows file associations)
 alias start='cygstart'
